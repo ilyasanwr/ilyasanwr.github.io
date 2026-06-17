@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammad Ilyas Anwar - Content Planner, Data Scrapper & Analyst, Digital Enthusiast.">
+    <meta name="author" content="Mohammad Ilyas Anwar">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon" />
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ilyas Anwar - Content Planner, Data Scrapper & Analyst, Digital Enthusiast">
+    <meta property="og:description" content="Cloud Engineer | SRE | DevOps Engineer specializing in cloud infrastructure and system reliability">
+    <meta property="og:url" content="ilyasanwar">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Ilyas Anwar - Content Planner, Data Scrapper & Analyst, Digital Enthusiast">
+    <meta name="twitter:description" content="Cloud Engineer | SRE | DevOps Engineer specializing in cloud infrastructure and system reliability">
+    
+    <title>Ilyas Anwar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="terminal-prompt">$</span> ilyas-anwar<span class="blink">_</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certs" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="https:///" target="_blank" class="nav-link">Blog</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon sun">☀️</span>
+                <span class="theme-icon moon">🌙</span>
+            </button>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="terminal-button close"></span>
+                        <span class="terminal-button minimize"></span>
+                        <span class="terminal-button maximize"></span>
+                    </div>
+                    <div class="terminal-title">ilyas-anwar~</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-line">
+                        <span class="terminal-prompt">ilyas-anwar</span>:<span class="terminal-path">~</span>$ whoami
+                    </div>
+                    <div class="terminal-output" id="terminalOutput"></div>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary">
+                    <span>$ ./contact.sh</span>
+                    <div class="btn-glow"></div>
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <span>$ cat about.md</span>
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow-container">
+                <span class="arrow"></span>
+                <span class="arrow"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">$ cat about.md</span>
+                <h2 class="section-title">About<span class="text-accent">.</span>Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image" data-animate>
+                    <div class="image-container">
+                        <img src="./assets/profile.png" alt="Mohammad Ilyas Anwar">
+                        <div class="image-frame"></div>
+                    </div>
+
+                </div>
+                <div class="about-text" data-animate>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span>about.json</span>
+                        </div>
+                        <pre class="code-content">
+{
+  "name": "Mohammad Ilyas Anwar",
+  "role": "Content Planner, Data Scrapper & Analyst, Digital Enthusiast",
+  "location": "Central Java, Indonesia",
+  "experience": "1+ years",
+  "focus": [
+    "Content Crafting",
+    "Data Scrapping and Analyze",
+    "Digital Trend"
+  ]
+}</pre>
+                    </div>
+                    <p class="about-description">
+                        Lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">XX</span>
+                            <span class="stat-label">Lorem ipsum</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">XX</span>
+                            <span class="stat-label">Lorem ipsum</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">XX</span>
+                            <span class="stat-label">Lorem ipsum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">$ ls -la /skills/</span>
+                <h2 class="section-title">Technical<span class="text-accent">.</span>Stack</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-animate>
+                    <div class="skill-header">
+                        <div class="skill-icon"></div>
+                        <h3>ADALAH POKOKNYA</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Lorem ipsum</span>
+                            <span class="skill-years">Lorem ipsum</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Lorem ipsum</span>
+                            <span class="skill-years">Lorem ipsum</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-animate>
+                    <div class="skill-header">
+                        <div class="skill-icon"></div>
+                        <h3>CONTENT PLANNER</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Lorem ipsum</span>
+                            <span class="skill-years">Lorem ipsum</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Lorem ipsum</span>
+                            <span class="skill-years">Lorem ipsum</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Lorem ipsum</span>
+                            <span class="skill-years">Lorem ipsum</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Lorem ipsum</span>
+                            <span class="skill-years">Lorem ipsum</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-animate>
+                    <div class="skill-header">
+                        <div class="skill-icon"></div>
+                        <h3>ADALAH POKOKNYA</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Lorem ipsum</span>
+                            <span class="skill-years">Lorem ipsum</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Lorem ipsum</span>
+                            <span class="skill-years">Lorem ipsum</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Lorem ipsum</span>
+                            <span class="skill-years">Lorem ipsum</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Lorem ipsum</span>
+                            <span class="skill-years">Lorem ipsum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">here we go!</span>
+                <h2 class="section-title">Work<span class="text-accent">.</span>Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Jul 2024 - Feb 2025</span>
+                            <span class="timeline-status">Completed</span>
+                        </div>
+                        <h3 class="timeline-title">Social Media Staff</h3>
+                        <h4 class="timeline-company">PT. Selawe Labs Komunikasi</h4>
+                        <p class="timeline-description">
+                            Lorem ipsum dolor sit amet.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Content Crafting</span>
+                            <span class="tag">Account Maintaning</span>
+                            <span class="tag">Cyber Deploying</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Feb 2025 - Apr 2025</span>
+                            <span class="timeline-status">Completed</span>
+                        </div>
+                        <h3 class="timeline-title">Anonym Film Reviewer - BAHASINFILM</h3>
+                        <h4 class="timeline-company">PT. Selawe Labs Komunikasi</h4>
+                        <p class="timeline-description">
+                            Lorem Ipsum dolor sit amet.
+			</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Content Editing</span>
+                            <span class="tag">Film Reviewing</span>
+                            <span class="tag">Film Analyze</span>
+                            <span class="tag">Content Breakdown</span>
+                            <span class="tag">Deep Research Copywritting</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">May 2025 - Oct 2025</span>
+                            <span class="timeline-status">Completed</span>
+                        </div>
+                        <h3 class="timeline-title">Content Planner</h3>
+                        <h4 class="timeline-company">PT. Selawe Labs Komunikasi</h4>
+                        <p class="timeline-description">
+                            Lorem Ipsum dolor sit amet.
+			</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Content Ideatiom</span>
+                            <span class="tag">Brainstorm</span>
+                            <span class="tag">Brief Ideation</span>
+                            <span class="tag">Trend Benchmarking</span>
+                            <span class="tag">Creative & Footage Sense</span>
+                        </div>
+                    </div>
+                </div>
+                        
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Oct 2025 - Dec 2025</span>
+                            <span class="timeline-status">Completed</span>
+                        </div>
+                        <h3 class="timeline-title">Adalah Pokoknya</h3>
+                        <h4 class="timeline-company">PT. Mengudara Bercerita Indonesia</h4>
+                        <p class="timeline-description">
+                            Lorem Ipsum dolor sit amet.
+			</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Manpower Management</span>
+                            <span class="tag">Narrative Breakdown </span>
+                            <span class="tag">Trend Benchmarking</span>
+                            <span class="tag">Timeline Reliable</span>
+                            <span class="tag">Account Maintaning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">Dec 2025 - Now</span>
+                            <span class="timeline-status">RUNNING</span>
+                        </div>
+                        <h3 class="timeline-title">Adalah Pokoknya</h3>
+                        <h4 class="timeline-company">PT. Mengudara Bercerita Indonesia</h4>
+                        <p class="timeline-description">
+                            Lorem Ipsum dolor sit amet.
+			</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Lorem ipsum</span>
+                            <span class="tag">Lorem ipsum</span>
+                            <span class="tag">Lorem ipsum</span>
+                            <span class="tag">Lorem ipsum</span>
+                            <span class="tag">Lorem ipsum</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="education-section" data-animate>
+                <h3 class="subsection-title">Education</h3>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-icon">📚</div>
+                        <div class="education-content">
+                            <h4>SMK Negeri 1 Adiwerna</h4>
+                            <p class="education-degree">Computer and Network Engineering</p>
+                            <span class="education-year">2021 - 2024</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-grid"></div>
+                    <div class="education-card">
+                        <div class="education-icon">📚</div>
+                        <div class="education-content">
+                            <h4>SMP Negeri 7 Tegal</h4>
+                            <span class="education-year">2018 - 2021</span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Courses & Training Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">$ cat /training/courses.log</span>
+                <h2 class="section-title">Courses<span class="text-accent">&</span>Training</h2>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Google</div>
+                    <h3 class="course-title">Get Certified Program Edition 3</h3>
+                    <span class="course-year">2025</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Adinusa</div>
+                    <h3 class="course-title">Monitoring with Prometheus</h3>
+                    <span class="course-year">2024</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Adinusa</div>
+                    <h3 class="course-title">Getting Started with ELK Stack</h3>
+                    <span class="course-year">2024</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Adinusa</div>
+                    <h3 class="course-title">GitLab Administration</h3>
+                    <span class="course-year">2024</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Adinusa</div>
+                    <h3 class="course-title">Kubernetes Administration</h3>
+                    <span class="course-year">2024</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Adinusa</div>
+                    <h3 class="course-title">OpenStack Administration Multi Node</h3>
+                    <span class="course-year">2024</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Adinusa</div>
+                    <h3 class="course-title">Ceph Administration</h3>
+                    <span class="course-year">2024</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Adinusa</div>
+                    <h3 class="course-title">Automation with Ansible</h3>
+                    <span class="course-year">2023</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Adinusa</div>
+                    <h3 class="course-title">Docker Fundamental</h3>
+                    <span class="course-year">2023</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Adinusa</div>
+                    <h3 class="course-title">Linux System Administration</h3>
+                    <span class="course-year">2023</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Red Hat</div>
+                    <h3 class="course-title">Red Hat Academy - Program Learner</h3>
+                    <span class="course-year">2024</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Dicoding</div>
+                    <h3 class="course-title">Architecting on AWS</h3>
+                    <span class="course-year">2023</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Dicoding</div>
+                    <h3 class="course-title">Cloud Practitioner Essentials</h3>
+                    <span class="course-year">2022</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">Telkom DigiUp</div>
+                    <h3 class="course-title">Web Programmer Python</h3>
+                    <span class="course-year">2023</span>
+                </div>
+                <div class="course-card" data-animate>
+                    <div class="course-provider">freeCodeCamp</div>
+                    <h3 class="course-title">Responsive Web Design</h3>
+                    <span class="course-year">2022</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certs" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">here we go!</span>
+                <h2 class="section-title">Featured<span class="text-accent">.</span>Projects</h2>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card" data-animate>
+                    <div class="cert-badge">
+                        <img src="./assets/GDD.jpeg">
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-issuer">Lorem ipsumd</span>
+                        <h3 class="cert-title">GARUDA DI DADAKU</h3>
+                        <p class="cert-code">Lorem ipsum</p>
+                        <span class="cert-validity">Release Year: 2026</span>
+                        <a href="https://cinepoint.com/#/pages/directory/detail/3911" target="_blank" class="cert-link">
+                            View Cinepoint →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-animate>
+                    <div class="cert-badge">
+                        <img src="./assets/KKS.jpeg">
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-issuer">Lorem ipsumd</span>
+                        <h3 class="cert-title">KUPELUK KAMU SELAMANYA</h3>
+                        <p class="cert-code">Lorem ipsum</p>
+                        <span class="cert-validity">Release Year: 2026</span>
+                        <a href="https://cinepoint.com/#/pages/directory/detail/3859" target="_blank" class="cert-link">
+                            View Cinepoint →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-animate>
+                    <div class="cert-badge">
+                        <img src="./assets/NA WILLA.jpg" alt="RHCE">
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-issuer">Lorem ipsumd</span>
+                        <h3 class="cert-title">NA WILLA</h3>
+                        <p class="cert-code">Lorem ipsum</p>
+                        <span class="cert-validity">Release Year: 2026</span>
+                        <a href="https://cinepoint.com/#/pages/directory/detail/3678" target="_blank" class="cert-link">
+                            View Cinepoint →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-animate>
+                    <div class="cert-badge">
+                        <img src="./assets/ALAS ROBAN.jpg" alt="RHCE">
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-issuer">Lorem ipsum</span>
+                        <h3 class="cert-title">ALAS ROBAN</h3>
+                        <p class="cert-code">Lorem ipsum</p>
+                        <span class="cert-validity">Release Year: 2026</span>
+                        <a href="https://cinepoint.com/#/pages/directory/detail/3583" target="_blank" class="cert-link">
+                            View Cinepoint →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-animate>
+                    <div class="cert-badge">
+                        <img src="./assets/SKLINTRIK.png" alt="RHCSC">
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-issuer">Lorem ipsum</span>
+                        <h3 class="cert-title">SOSOK KETIGA: LINTRIK</h3>
+                        <p class="cert-code">Lorem ipsum</p>
+                        <span class="cert-validity">Release Year: 2025</span>
+                        <a href="https://cinepoint.com/#/pages/directory/detail/3246" target="_blank" class="cert-link">
+                            View Cinepoint →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-animate>
+                    <div class="cert-badge">
+                        <img src="./assets/GETIHIRENG.png" alt="RHCSA">
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-issuer">Lorem ipsum</span>
+                        <h3 class="cert-title">GETIH IRENG</h3>
+                        <p class="cert-code">Lorem ipsum</p>
+                        <span class="cert-validity">Release Year: 2025</span>
+                        <a href="https://cinepoint.com/#/pages/directory/detail/3234" target="_blank" class="cert-link">
+                            View Cinepoint →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-animate>
+                    <div class="cert-badge">
+                        <img src="./assets/YAKINNIKAH.png" alt="BNSP Web">
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-issuer">Lorem ipsum</span>
+                        <h3 class="cert-title">YAKIN NIKAH</h3>
+                        <p class="cert-code">Lorem ipsum</p>
+                        <span class="cert-validity">Release Year: 2025</span>
+                        <a href="https://cinepoint.com/#/pages/directory/detail/3219" target="_blank" class="cert-link">
+                            View Cinepoint →
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card" data-animate>
+                    <div class="cert-badge">
+                        <img src="./assets/PANGGILAKUAYAH.png" alt="BNSP Support">
+                    </div>
+                    <div class="cert-content">
+                        <span class="cert-issuer">Lorem ipsum</span>
+                        <h3 class="cert-title">PANGGIL AKU AYAH</h3>
+                        <p class="cert-code">Lorem ipsum</p>
+                        <span class="cert-validity">Release Year: 2025</span>
+                        <a href="https://cinepoint.com/#/pages/directory/detail/3140" target="_blank" class="cert-link">
+                            View Cinepoint →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">$ ./contact.sh --init</span>
+                <h2 class="section-title">Get<span class="text-accent">.</span>InTouch</h2>
+            </div>
+            <div class="contact-content-single">
+                <div class="contact-info" data-animate>
+                    <div class="contact-intro">
+                        <h3>Let's Connect!</h3>
+                        <p>Interested in collaborating or discussing cloud infrastructure, DevOps practices, or SRE solutions? Feel free to reach out through any of these channels.</p>
+                    </div>
+                    <div class="contact-grid">
+                        <a href="mailto:ilyasanwar.mengudara@gmail.com" class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-info-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">ilyasanwar.mengudara@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="https://" target="_blank" class="contact-card">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-info-text">
+                                <span class="contact-label"> </span>
+                                <span class="contact-value"> </span>
+                            </div>
+                        </a>
+                        <a href="https://" target="_blank" class="contact-card">
+                            <div class="contact-icon">💻</div>
+                            <div class="contact-info-text">
+                                <span class="contact-label"> </span>
+                                <span class="contact-value"> </span>
+                            </div>
+                        </a>
+                        <a href="https://" target="_blank" class="contact-card">
+                            <div class="contact-icon">⚙️</div>
+                            <div class="contact-info-text">
+                                <span class="contact-label"> </span>
+                                <span class="contact-value"> </span>
+                            </div>
+                        </a>
+                        <a href="https://instagram.com/ilyasanwar_" target="_blank" class="contact-card">
+                            <div class="contact-icon">📸</div>
+                            <div class="contact-info-text">
+                                <span class="contact-label">Instagram</span>
+                                <span class="contact-value">@ilyasanwar_</span>
+                            </div>
+                        </a>
+                        <div class="contact-card location-card">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-info-text">
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Central Java, Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <span class="terminal-prompt">$</span> ilyasanwar<span class="blink">_</span>
+                    </div>
+                    <p class="footer-tagline">Deliver ideation to convert the conversation.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigate</h4>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#certs">Projects</a>
+                        <a href="#courses">Courses</a>
+                        <a href="#certs">Certifications</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Connect</h4>
+                        <a href="https://" target="_blank">Blog</a>
+                        <a href="https://" target="_blank">LinkedIn</a>
+                        <a href="https://" target="_blank">GitHub</a>
+                        <a href="https://" target="_blank">GitLab</a>
+                    </div>
+                </div>
+            </div>
+           <div class="footer-bottom">
+                <p>© 2026 Mohammad Ilyas Anwar. All rights reserved.</p>
+                <p class="footer-code">$ git commit -m "feat: portfolio 2026"</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
